@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(180deg, #DEDEDE 0%, #FFF 100%);
+}
+
+.logo,
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    height: 60px;
+    margin: 10px 30px;
+    cursor: pointer;
+}
+
+.search {
+    color: #909090;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    height: 50px;
+    border-radius: 73px;
+    border: 1px solid #D4D4D4;
+    background: #FFF;
+    outline: none;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 130px;
+    height: 100px;
+}
+
+nav ul li a {
+    display: flex;
+    text-decoration: none;
+    color: #0093FE99;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#inbox a {
+    color: #0093FE;
+}
+
+.border {
+    border-bottom: #0093FE solid 3px;
+}
+
+.home:hover,
+.inbox:hover,
+.notifications:hover,
+.settings:hover,
+.menu:hover {
+    cursor: pointer;
+    background: linear-gradient(180deg, #EFEFEFEE 0%, #FFF 100%);
+}
+
+.left-aside {
+    width: 300px;
+    height: 1035px;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-aside div {
+    width: 300px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.left-aside div {
+    width: 300px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.left-aside div h3 {
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.left-aside div:hover {
+    background-color: #EFEFEFEE;
+}
+
+.right-aside {
+    width: 300px;
+    height: 1035px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 300px;
+    height: 1035px;
+}
+
+.right-aside h3 {
+    padding: 30px;
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.right-aside div h4 {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.fr1,
+.fr2,
+.fr3,
+.fr4,
+.fr5 {
+    width: 300px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    gap: 10px;
+}
+
+.fr1:hover,
+.fr2:hover,
+.fr3:hover,
+.fr4:hover,
+.fr5:hover {
+    background: #E1E1E1;
+    cursor: pointer;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding: 20px;
+    color: #797979;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.inbox-section{
+    width: 805px;
+    margin-top: 30px;
+}
+
+.inbox-header{
+    width: 805px;
+    height: 913px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 1px 1px 1.6px 1px rgba(0, 0, 0, 0.25);
+}
+
+.inbox-header{
+    width: 805px;
+    height: 86px;
+    border-radius: 10px 10px 0px 0px;
+    background: #F0F0F0;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.inbox-header .left-header {
+    display: flex;
+    align-items: center;
+}
+
+.inbox-header .left-header img{
+    border-radius: 50%;
+}
+
+.inbox-header .left-header div{
+    padding-left: 15px;
+}
+.inbox-header .left-header h3{
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.inbox-header .left-header p{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.right-header {
+    display: flex;
+    gap: 20px;
+}
+
+.right-header svg{
+    cursor: pointer;
+}
+
+.inbox-body{
+    display: flex;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.inbox-body .inb-left-aside{
+    display: flex;
+    flex-direction: column;
+    margin-top: 215px;
+    gap: 125px;
+}
+
+.inbox-body .inb-left-aside > img{
+    border-radius: 50%;
+    margin-right: 20px;
+
+}
+
+.inbox-body .messages{
+    width: 100%;
+}
+.inbox-body p{
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.inbox-body .messages .m1{
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 133px;
+    height: 47px;
+    border-radius: 108px;
+    background: #EFEFEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inbox-body .messages .m2{
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 301px;
+    height: 82px;
+    border-radius: 29px;
+    background: #EFEFEF;
+    margin-top: 10px;
+}
+
+.inbox-body .messages .m3{
+    color: #fff;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 108px;
+    background: #0093FE;
+    width: 242px;
+    height: 47px;
+    margin-top: 10px;
+}
+
+.inbox-body .messages .m4{
+    color: #fff;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 108px;
+    background: #0093FE;
+    width: 187px;
+    height: 47px;
+    margin-top: 10px;
+}
+
+.inbox-body .messages .m5{
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 159px;
+    height: 47px;
+    border-radius: 108px;
+    background: #EFEFEF;
+    margin-top: 10px;
+}
+
+.inbox-body .messages .m6{
+    color: #fff;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 108px;
+    background: #0093FE;
+    width: 118px;
+    height: 47px;
+    margin-top: 10px;
+}
+
+.messages .right{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px ;
+}
+
+.inbox-body .messages img{
+    width: 200px;
+    height: 200px;
+    margin-top: 25px;
+}
+
+.inbox-footer{
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.inbox-footer input{
+    width: 502px;
+    height: 50px;
+    border-radius: 73px;
+    border: 1px solid #D4D4D4;
+    background: #EFEFEF;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-left: 30px;
+}
+
+svg{
+    cursor: pointer;
+}

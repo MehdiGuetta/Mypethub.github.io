@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(180deg, #DEDEDE 0%, #FFF 100%);
+}
+
+.logo,
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    height: 60px;
+    margin: 10px 30px;
+    cursor: pointer;
+}
+
+.search {
+    color: #909090;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    height: 50px;
+    border-radius: 73px;
+    border: 1px solid #D4D4D4;
+    background: #FFF;
+    outline: none;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 130px;
+    height: 100px;
+}
+
+nav ul li a {
+    display: flex;
+    text-decoration: none;
+    color: #0093FE99;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#inbox a {
+    color: #0093FE;
+}
+
+.border {
+    border-bottom: #0093FE solid 3px;
+}
+
+.home:hover,
+.inbox:hover,
+.notifications:hover,
+.settings:hover,
+.menu:hover {
+    cursor: pointer;
+    background: linear-gradient(180deg, #EFEFEFEE 0%, #FFF 100%);
+}
+
+.left-aside {
+    width: 300px;
+    height: 1035px;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-aside div {
+    width: 300px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.left-aside div {
+    width: 300px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.left-aside div h3 {
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.left-aside div:hover {
+    background-color: #EFEFEFEE;
+}
+
+.profile-section{
+    margin-right: 100px;
+    width: 988px;
+}
+
+.prf-bottom{
+    display: flex;
+    gap: 25px;
+}
+
+.prf-top{
+    width: 988px;
+    height: 481px;
+    border-radius: 10px;
+    border: 1.5px solid #D4D4D4;
+    background: #FFF;
+    position: relative;
+}
+
+.logo-banner .cam-circle{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border-radius: 20px;
+    background: #ffffff;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    cursor: pointer;
+}
+
+.logo-banner .prf-logo{
+    position: absolute;
+    top: 150px;
+    left: 60px;
+}
+
+.logo-infos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-infos-left h2{
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.logo-infos-left p{
+    padding-top: 10px;
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.logo-infos-left{
+    padding: 20px;
+    position: absolute;
+    left: 80px;
+    bottom: 5px;
+}
+
+.logo-infos-right{
+    position: absolute;
+    right: 20px;
+    bottom: 140px;
+    cursor: pointer;
+}
+
+.friend-list{
+    width: 293px;
+    height: 265px;
+    border-radius: 10px;
+    border: 1px solid #D4D4D4;
+    background: #F0F0F0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.friend-list h3{
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 16px;
+}
+
+.first-friend,
+.second-friend,
+.third-friend
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 293px;
+    height: 69px;
+    border: 1px solid rgba(144, 144, 144, 0.60);
+    background: #FAFAFA;
+}
+
+.first-friend:hover,
+.second-friend:hover,
+.third-friend:hover{
+    background: #efefefed;
+}
+
+.first-friend h4,
+.second-friend h4,
+.third-friend h4{
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.first-friend p,
+.second-friend p,
+.third-friend p{
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.posts{
+    width: 666px;
+    height: 701px;
+    border-radius: 10px;
+    background: #F0F2F5;
+    margin-top: 15px;
+}
+
+.post-header {
+    display: flex;
+    width: 100%;
+    height: 84px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.post-header .left-header div {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.post-header .left-header {
+    display: flex;
+    align-items: center;
+}
+
+.post-header .left-header div h3 {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.post-header .left-header div p {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.post-header img {
+    border-radius: 25px;
+}
+
+.posts .post-header i {
+    font-size: 24px;
+    padding: 5px;
+}
+
+.posts .post-header i:hover {
+    background: rgba(203, 203, 203, 0.65);
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 48%;
+}
+
+.posts .post-media {
+    display: flex;
+    justify-content: center;
+}
+
+.posts .post-media img {
+    border-radius: 10px;
+}
+
+.post-reacts {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.like,
+.quote,
+.repost {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F0F2F5;
+    color: #4E4C4B;
+    font-family: 'Open Sans';
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.like:hover,
+.quote:hover,
+.repost:hover {
+    border-radius: 10px;
+    background: #E1E1E1;
+    color: #0093FE;
+    cursor: pointer;
+}
+

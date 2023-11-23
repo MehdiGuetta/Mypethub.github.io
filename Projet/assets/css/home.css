@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(180deg, #DEDEDE 0%, #FFF 100%);
+
+}
+
+.container{
+    display: flex;
+    height: calc(100vh - 100px);
+    justify-content: space-between;
+}
+
+.logo,
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    height: 60px;
+    margin: 10px 30px;
+    cursor: pointer;
+}
+
+.search {
+    color: #909090;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    height: 50px;
+    border-radius: 73px;
+    border: 1px solid #D4D4D4;
+    background: #FFF;
+    outline: none;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 130px;
+    height: 100px;
+}
+
+nav ul li a {
+    display: flex;
+    text-decoration: none;
+    color: #0093FE99;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#home a {
+    color: #0093FE;
+}
+
+.border {
+    border-bottom: #0093FE solid 3px;
+}
+.home:hover,
+.inbox:hover,
+.notifications:hover,
+.settings:hover,
+.menu:hover {
+    cursor: pointer;
+    background: linear-gradient(180deg, #EFEFEFEE 0%, #FFF 100%);
+}
+
+.left-aside {
+    width: 300px;
+    height: 1035px;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-aside div {
+    width: 300px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.left-aside div h3 {
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.left-aside div:hover {
+    background-color: #EFEFEFEE;
+}
+
+.new-post {
+    width: 716px;
+    height: 160px;
+    border-radius: 10px;
+    background: #F0F2F5;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.media {
+    display: flex;
+    justify-content: space-around;
+    width: 716px;
+}
+
+.np-search {
+    width: 589px;
+    height: 50px;
+    border-radius: 217px;
+    background: rgba(203, 203, 203, 0.65);
+    color: rgba(108, 108, 108, 0.79);
+    font-family: 'Open Sans';
+    border: none;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-left: 30px;
+}
+
+.photo-video,
+.reel,
+.events {
+    width: 200px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #000;
+    font-family: 'Open sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.photo-video:hover,
+.reel:hover,
+.events:hover {
+    background: rgba(203, 203, 203, 0.65);
+    border-radius: 10px;
+}
+
+.posts {
+    width: 716px;
+    height: 789px;
+    border-radius: 10px;
+    background: #F0F2F5;
+    margin-top: 15px;
+}
+
+.post-header {
+    display: flex;
+    width: 100%;
+    height: 84px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.post-header .left-header div {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.post-header .left-header {
+    display: flex;
+    align-items: center;
+}
+
+.post-header .left-header div h3 {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.post-header .left-header div p {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.post-header img {
+    border-radius: 25px;
+}
+
+.posts .post-header i {
+    font-size: 24px;
+    padding: 5px;
+}
+
+.posts .post-header i:hover {
+    background: rgba(203, 203, 203, 0.65);
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 48%;
+}
+
+.posts .post-media {
+    display: flex;
+    justify-content: center;
+}
+
+.posts .post-media img {
+    border-radius: 10px;
+}
+
+.post-reacts {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.like,
+.quote,
+.repost {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F0F2F5;
+    color: #4E4C4B;
+    font-family: 'Open Sans';
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.like:hover,
+.quote:hover,
+.repost:hover {
+    border-radius: 10px;
+    background: #E1E1E1;
+    color: #0093FE;
+    cursor: pointer;
+}
+
+.right-aside {
+    width: 300px;
+    height: 1035px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 300px;
+    height: 1035px;
+}
+
+.right-aside h3 {
+    padding: 30px;
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.right-aside div h4 {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.fr1,
+.fr2,
+.fr3,
+.fr4,
+.fr5 {
+    width: 300px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    gap: 10px;
+}
+
+.fr1:hover,
+.fr2:hover,
+.fr3:hover,
+.fr4:hover,
+.fr5:hover {
+    background: #E1E1E1;
+    cursor: pointer;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding: 20px;
+    color: #797979;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
